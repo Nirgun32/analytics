@@ -168,7 +168,7 @@ addmargins(m1,c(1,2),list(list(mean,sum,max),list(sd,var))) #Both Rows and Colum
 (course = sample(c('BBA','MBA'),size = 30,replace = T, prob = c(0.5,0.5)))
 
 set.seed(1234)  #Can be any number
-?set.seed
+?set.seed  #To Replicate the same values for a particular function
 
 df1 = data.frame(rollno,sname, gender, marks, marks2, course, stringsAsFactors = F)
 str(df1)
@@ -185,6 +185,7 @@ df1
 df1$gender  # $ seperator between data frame name and category
 df1[,c(2,4)] # Multiple Columns
 df1[1:10,]
+
 
 #Factors----
 
